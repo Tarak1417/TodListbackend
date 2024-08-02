@@ -1,46 +1,40 @@
-.home{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-.create_form input{
-  width:300px;
-  padding:10px;
-  border-bottom:2px solid;
-  outline: none;
-}
-.create_form button{
-  padding:10px;
-  background-color:black;
-  color:white;
-  cursor: pointer;
-}
-.task{
-  display: flex;
-  align-items: center;
-  width:345px;
-  justify-content: space-between;
-  background-color: black;
-  color: white;
-  height: 35px;
-  padding:2px 5px 2px 5px;
-  margin-top: 2px;
-}
-.checkbox{
-  display: flex;
-  align-items: center;
-}
-.checkbox .icon{
-  margin-right: 5px;
-  font-size: 15px;
 
+
+.Maincontainer {
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); 
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
 }
-.task div span{
-  margin: 0px 5px 0px 4px;
+
+#root {
+  width: 100%;
+  height: 100%;
 }
-.task div .icon {
-  cursor: pointer;
+
+h1, h2 {
+  color: #333;
 }
-.line_through{
-  text-decoration: line-through;
+
+.container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+  margin: auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

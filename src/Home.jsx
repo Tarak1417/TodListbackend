@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Create from "./Create";
 import axios from "axios";
 import { BsCircleFill, BsFillTrashFill, BsFillCheckCircleFill } from "react-icons/bs";
+import "./Home.css"
 
 function Home() {
   const [todos, setTodo] = useState([]);
@@ -25,6 +26,15 @@ function Home() {
       })
       .catch((error) => console.log(error));
   };
+
+  const handleDelete =(id , done)=>{
+    axios.delete("http://localhost:3001/delete/"+id,{done : !done})
+    .then((result) => {
+      location.reload()
+    })
+    .catch((error) => console.log(error));
+};
+  
 
   return (
     <div className="home">
